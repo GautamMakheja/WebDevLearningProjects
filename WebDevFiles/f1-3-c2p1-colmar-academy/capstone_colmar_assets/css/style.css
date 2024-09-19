@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.videoformobile {display: none;}
+
+@media only screen and (max-width:560px){
+
+  #bottombox .guyreadingbookbox .readmorestories{display : none;}
+
+
+  #bottombox .videoformobile {
+    display: flex;
+    width: 100%;
+    box-sizing: content-box;
+    border-bottom: 1px solid grey;
+    margin-top: -25rem;
+    padding-bottom: 0;
+  }
+
+}
+
+body {
+  display:block;
+  font-size: 16px;
+  font-family: 'Ubuntu';
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+   font-family: 'Ubuntu' serif;
+   color: #23236f;
+   line-height: 1.1;
+   letter-spacing: 1px;
+}
+
+   /* Large heading weight */
+h1,
+h2 {
+   font-weight: 700;
+}
+
+   /* Small heading weight */
+h3,
+h4 {
+   font-weight: 600;
+}
+   /* Heading sizes */
+h1 {
+   font-size: 3rem;
+}
+
+h2 {
+   font-size: 2.3rem;
+   margin-bottom: 1rem;
+}
+
+h3 {
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+}
+
+h4 {
+   font-size: 1.25rem;
+   margin-bottom: 0.5rem;
+ }
+
+p {
+   line-height: 1.4;
+}
+
+/* Header of page  */
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: auto 1.5rem;
+  height: 4rem;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  margin-bottom: 0px;
+  z-index: 67;
+}
+
+.logontext {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  flex-direction: row;
+}
+
+.logontext p {
+  display: flex;
+  align-self: center;
+  margin-left: 4px;
+  line-height: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-self: center;
+}
+
+nav p {
+  margin-right: 1rem;
+}
+
+.icons {
+  display: none;
+  line-height: 2rem;
+}
+@media only screen and (max-width: 560px)
+{
+  .logontext {
+    display: none;
+  }
+
+  header nav p {
+    display: none;
+  }
+
+  .icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 52341;
+  }
+  }
+/* Main banner of page*/
+
+.banner {
+  position: relative;
+  top: 4rem;
+  display: inline-flex;
+  width: 100%;
+  background-color: #DCDCDC;
+  height: auto;
+  padding: 2rem 1.5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.bannerimage {
+  display: flex;
+  flex: 5;
+  height: auto;
+  align-items: center;
+  background-size: cover;
+}
+
+.bannerimage img {
+  max-width: 100%;
+  display: flex;
+}
+
+.textforimage {
+  flex: 3;
+  display: flex;
+  height: 100%;
+  padding-left: 1.5rem;
+  padding-right: 7.5rem;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.textforimage h1 {
+  color: #383838;
+  font-size: 2.41875rem;
+  font-weight: 700;
+}
+
+.notbutton {
+  color: #383838;
+  font-size: 1.40625rem;
+  font-weight: 500;
+  margin: 1.5rem auto;
+}
+
+.button {
+  display: flex;
+  padding: 0.5rem;
+  color: #FCFCFC;
+  font-size: 1.2rem;
+  background-color: #383838;
+  border-radius: 2px;
+  width: 100%;
+  justify-content: center;
+  text-align: flex-start;
+  text-decoration: none;
+}
+
+
+.button:hover {
+  color: #FCFCFC;
+  background-color: #9B9B9B;
+}
+
+@media only screen and (max-width:560px) {
+  .banner {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+  .bannerimage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .textforimage {
+    flex: 10;
+    justify-content: flex-start;
+  }
+}
+
+/* Section with guy reading books and thesis exhibit format */
+
+.guyreadingbookbox {
+  display: inline-flex;
+  flex: 6;
+  justify-content: flex-start;
+  padding: 0 1rem 2rem 1.5rem;
+  border-bottom: 1px solid #EAEBEC;
+}
+
+.imagewtext {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #DCDCDC;
+  padding-right: 1.5rem;
+}
+
+.imagewtext img, video{
+  max-width: 100%;
+  background-size: cover;
+}
+
+.imagewtext h1, h3{
+  margin: 1.5rem 0;
+  color:#383838;
+}
+
+.imagewtext h3{
+  margin-left: -1.5rem;
+}
+
+.imagewtext p {
+  margin-bottom: 1.5rem;
+  color: #383838;
+}
+
+.imagewtext .footnote {
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.readmorestories {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  width: 40%;
+  flex-wrap: wrap;
+}
+
+
+.readmorebox {
+  width: 100%;
+  padding: 1rem;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #DCDCDC;
+  }
+
+.readmorebox:hover {
+  background-color: #DCDCDC;
+}
+
+.readmorebox .desktop {
+  width: 35%;
+  height: auto;
+}
+
+.readmoretext {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  padding-left: 1rem;
+  flex-wrap: wrap;
+}
+
+.readmoretitle {
+  display: flex;
+  font-family: 'Ubuntu';
+}
+
+.readmoresubtitle {
+  display: flex;
+  color: #9C9D9D;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.readmorecontent a {
+  display: flex;
+  color: #4BA3F4;
+  font-family: 'Ubuntu' serif;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.readmorecontent:hover {
+  color: blue;
+}
+
+.mobile-image {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .imagewtext {
+    display: none;
+  }
+
+  .readmorestories {
+    width: 100%;
+  }
+
+  .guyreadingbookbox {
+    padding: 2rem 0;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .mobile-image{
+    display: flex;
+    max-width: 95%;
+    height: auto;
+    margin-bottom:1rem;
+  }
+
+  .readmorebox {
+    flex-direction: column;
+    padding-top: 0.5rem;
+    justify-content: flex-start;
+    padding-left: 0rem;
+  }
+
+  .readmoretext {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding-left: 1rem;
+    flex-wrap:
+  }
+}
+
+/* Start learning  */
+
+.startlearning {
+  display: flex;
+  flex-direction: column;
+  background-color: #EAEBEC;
+  width: 100%;
+  justify-content: center;
+}
+
+.startlearning h1{
+  margin-top: 2rem;
+  text-align: center;
+  color: #383838;
+}
+
+.learnboxes {
+  padding: auto 4.5rem;
+  display: inline-flex;
+  flex-direction: row;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.learnbox {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 2rem;
+}
+
+.learnbox:hover {
+  background-color: #EAEBEC;
+}
+
+.learntextitems {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.learntitle {
+  font-size: 1.2375rem;
+  font-weight: 500;
+  color: #383838;
+  margin-top: 1rem;
+}
+
+.learnsubtitle{
+  color: #808080;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.learncontent {
+  margin-bottom: 1.5rem;
+}
+
+.learnimage {
+  width: 100%;
+  height: auto;
+}
+
+
+@media only screen and (max-width:560px){
+  .startlearning {
+    background-color: white;
+    margin-bottom: 1rem;
+  }
+
+  .learnbox {
+    width: 90%;
+    background-color: #D8D8D8;
+    border-radius: 5px;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin-bottom: -1rem;
+  }
+  .learnsubtitle, .learncontent, .learnimage {
+    display: none;
+  }
+
+  .learntitle {
+    align-self: flex-start;
+  }
+}
+
+}
+
+/* Thesis exhibit */
+
+#bottombox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#bottombox h1 {
+  color:#383838;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* Footer of the page*/
+
+footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+footer p {
+  line-height: 0.75rem;
+}
+
+@media only screen and (max-width: 560px){
+  footer .terms {
+   display: none;
+}
+
+footer {
+  justify-content: center;
+}
+
+}

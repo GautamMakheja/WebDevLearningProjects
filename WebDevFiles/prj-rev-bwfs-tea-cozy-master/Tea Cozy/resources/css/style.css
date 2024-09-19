@@ -1,0 +1,235 @@
+*
+        {
+          margin: 0;
+          padding: 0;
+        }
+
+
+
+body
+        {
+          font-family: Helvetica;
+          background-color: black;
+          color: seashell;
+          opacity:0.9;
+          font-size: 22px;
+          align-items: center;
+        }
+
+
+header
+        {
+          width: 100%;
+          height: 69px;
+          display: flex;
+          position: fixed;
+          border-bottom: 1px solid seashell;
+          justify-content: space-between;
+          background-color: black;
+          z-index:3;
+        }
+
+.logo
+        {
+          display: flex;
+          justify-content: flex-start;
+          align-self: center;
+          height: 50px;
+          margin-left: 10px;
+          z-index: 2;
+          position: relative;
+          top:10px;
+        }
+
+.nav
+        {
+          display: flex;
+          align-self: center;
+        }
+
+nav a   {
+          margin-right: 15px;
+          color: seashell;
+        }
+
+content {
+          display: flex;
+          flex-direction: column;
+          align-items:center;
+          width: 100%;
+          text-align: center;
+        }
+
+h2  h4  {
+          color:white;
+        }
+
+.introduction
+        {
+          height: 700px;
+          display: flex;
+          width: 1200px;
+          padding-top: 70px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          z-index:1;
+          align-items: center;
+          margin-bottom:20px;
+          background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+        }
+
+.caption
+        {
+          justify-content: center;
+          color:white;
+          background-color: black;
+          z-index: 2;
+          width: 1200px;
+          text-align: center;
+        }
+
+.cakes
+        {
+          width:1000px;
+          height: 500px;
+          text-align: center;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+.images
+        {
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: space-between;
+        }
+
+.images div
+        {
+          margin-bottom: 20px;
+        }
+
+
+.Tea
+        {
+          display: flex;
+          margin-bottom: 20px;
+          justify-content: center;
+        }
+
+.question
+        {
+          display: flex;
+          margin-bottom: 10px;
+          justify-content: center;}
+        }
+
+
+
+.images h3 h5
+        {
+          display:flex;
+          margin-bottom: 10px;
+        }
+
+.berryblitz
+        {
+          height:200px;
+          width: 300px;
+          margin-right: 20px;
+        }
+
+.spicedrum
+        {
+          height:200px;
+          width: 300px;
+          margin-right: 20px;
+        }
+
+.bedford
+        {
+          height:200px;
+          width: 300px;
+          margin-right: 20px;
+        }
+
+.myrtle
+        {
+          height:200px;
+          width: 300px;
+          margin-right: 20px;
+        }
+
+.donut
+        {
+          height:200px;
+          width: 300px;
+          margin-right: 20px;
+        }
+
+
+.locations
+        {
+          background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+          height: 500px;
+          width: 1200px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 90px;
+          margin-bottom: 40px;
+        }
+
+.boxes
+        {
+          display: inline-flex;
+          justify-content: space-around;
+        }
+
+.Locations
+        {
+          display: flex;
+          margin-bottom: 15px;
+          margin-top:50px;
+        }
+
+.boxl
+        {
+          width: 300px;
+          height: 300px;
+          display: flex;
+          background-color: black;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          margin-right: 20px;
+          margin-left: 20px;
+          opacity: 1;
+        }
+
+.normal
+        {
+          font-weight: normal;
+        }
+
+.contacts
+        {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          height: 200px;
+          justify-content: space-around;
+          margin-bottom: 70px;
+        }
+
+#copyright
+        {
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          margin-left: 10px;
+        }
